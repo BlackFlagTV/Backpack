@@ -1,0 +1,14 @@
+name: Backpack
+version: 1.0
+author: PVPMaster
+
+main: de.pvpmaster.backpack.Main
+
+commands:
+  backpack:
+    aliases:
+      - bp
+      - rucksack
+      - rs
+      - r
+      - b

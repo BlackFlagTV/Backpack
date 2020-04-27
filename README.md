@@ -7,11 +7,10 @@ At death, the items from the backpack are dropped along with the other inventory
 
 Features
 
-Access by command
-Dropping the items at death
+- Access by command
+- Dropping the items at death
 
 
 Command
 
-/backpack (/b) - Open the backpack
-/rucksack (/r) - Öffnet den Rucksack
+- /backpack (/b) - Open the backpack

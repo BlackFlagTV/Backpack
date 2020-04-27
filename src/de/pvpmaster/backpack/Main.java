@@ -2,6 +2,7 @@ package de.pvpmaster.backpack;
 
 import de.pvpmaster.backpack.commands.BackpackCommand;
 import de.pvpmaster.backpack.listener.DeathListener;
+import de.pvpmaster.backpack.listener.InventoryCloseListener;
 import de.pvpmaster.backpack.utilities.Backpack;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -21,7 +22,7 @@ public class Main extends JavaPlugin {
     public void onEnable() {
 
         getServer().getPluginManager().registerEvents(new DeathListener(this), this);
-        //getServer().getPluginManager().registerEvents(new InventoryClickListener(this), this);
+        getServer().getPluginManager().registerEvents(new InventoryCloseListener(this), this);
         this.getCommand("backpack").setExecutor(new BackpackCommand(this));
 
         loadConfiguration();

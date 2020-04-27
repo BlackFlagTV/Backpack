@@ -31,7 +31,7 @@ public class InventoryClickListener implements Listener {
         System.out.println(event.getInventory().getType());
         if (event.getRawSlot() < 27 && event.getRawSlot() >= 0) {
             if (plugin.getInventoryMap().containsKey(player)) {
-                if (inventory.getName().equals(plugin.getInventoryMap().get(player).getName())) {
+                    if (inventory.getName().equals(plugin.getInventoryMap().get(player).getName())) {
                     player.sendMessage("a");
 
                     Bukkit.getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
